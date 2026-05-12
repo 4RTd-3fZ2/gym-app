@@ -1,55 +1,3 @@
-// import { View, Text, Image, ScrollView } from 'react-native';
-
-// export default function Metricas() {
-//     const img_profile = require('@/assets/images/img_profile.jpg');
-
-//     const handleScroll = (event: any) => {
-//         const y = event.nativeEvent.contentOffset.y;
-//         // Luego haremos algo aqui
-//     };
-
-//     return (
-//         <View className="bg-[#0f172a] flex-1">
-//             <ScrollView className='w-full h-full'
-//                 onScroll={handleScroll}
-//                 scrollEventThrottle={16} // Importante para fluidez
-//             >
-//                 <View>
-//                     <View>
-//                         <View>
-//                             <Image source={img_profile} resizeMode="cover" style={{ width: '100%', height: '100%' }} ></Image>
-//                             <Text>IMG</Text>
-//                         </View>
-//                         <View>
-//                             <Text>Hoy</Text>
-//                             <Text>18 Nov</Text>
-//                         </View>
-//                     </View>
-//                     <View>
-//                         <Text>SETING</Text>
-//                     </View>
-//                 </View>
-
-//                 <View>
-//                     <Text>Estado</Text>
-//                 </View>
-
-//                 <View>
-//                     <Text>Hiatorial</Text>
-//                 </View>
-//             </ScrollView>
-//         </View>
-//     );
-// }
-
-
-
-
-
-
-
-
-
 import { View, Text, Image, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -100,7 +48,7 @@ export default function Metricas() {
                 {/* ── HEADER ── */}
                 <View className="flex-row items-center justify-between px-5 pt-12 pb-4">
                     {/* Avatar + fecha */}
-                    <View className="flex-row items-center gap-3">
+                    <View className="flex-row items-center gap-3 my-2">
                         <View
                             className="rounded-full overflow-hidden border-2 border-orange-500"
                             style={{ width: 48, height: 48 }}
